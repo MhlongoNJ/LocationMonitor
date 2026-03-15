@@ -1,158 +1,566 @@
 <!DOCTYPE html>
-<html  >
+<html lang="en">
 <head>
-  
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v5.6.13, mobirise.com">
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:image:src" content="">
-  <meta property="og:image" content="">
-  <meta name="twitter:title" content="Home">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/ic-icon-128x155.png" type="image/x-icon">
-  <meta name="description" content="">
-  
-  
-  <title>Home</title>
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Epilogue:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Epilogue:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-  
-  
-  
-  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy – Location Monitor</title>
+<style>
+  :root {
+    --grad1: #e8197c;
+    --grad2: #f7841e;
+    --purple: #7b1fa2;
+    --dark: #0f0f1a;
+    --card: #161628;
+    --card2: #1e1e35;
+    --text: #e8e8f0;
+    --muted: #9090b0;
+    --border: rgba(232,25,124,0.18);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--dark);
+    color: var(--text);
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    padding: 70px 24px 60px;
+    text-align: center;
+    background: linear-gradient(135deg, #0f0f1a 0%, #1a0a2e 50%, #0f0f1a 100%);
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% -10%, rgba(232,25,124,0.22) 0%, transparent 70%),
+      radial-gradient(ellipse 60% 40% at 80% 110%, rgba(247,132,30,0.15) 0%, transparent 60%),
+      radial-gradient(ellipse 40% 30% at 10% 90%, rgba(123,31,162,0.18) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .logo-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 28px;
+  }
+  .logo-wrap img {
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+    box-shadow: 0 0 28px rgba(232,25,124,0.5), 0 0 60px rgba(247,132,30,0.2);
+  }
+  .brand-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--grad1), var(--grad2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    background: linear-gradient(135deg, #fff 30%, rgba(232,25,124,0.85) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 14px;
+  }
+  .hero p {
+    color: var(--muted);
+    font-size: 1rem;
+    max-width: 480px;
+    margin: 0 auto 28px;
+  }
+  .badge {
+    display: inline-block;
+    padding: 6px 18px;
+    border-radius: 99px;
+    background: rgba(232,25,124,0.12);
+    border: 1px solid rgba(232,25,124,0.35);
+    font-size: 0.82rem;
+    color: var(--grad1);
+    letter-spacing: 0.5px;
+  }
+
+  /* ── GLOW DIVIDER ── */
+  .glow-line {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--grad1), var(--grad2), transparent);
+    margin: 0;
+    opacity: 0.6;
+  }
+
+  /* ── MAIN LAYOUT ── */
+  .container {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+  }
+
+  /* ── SECTION CARDS ── */
+  .section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 32px 36px;
+    margin-bottom: 24px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  .section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--grad1), var(--grad2));
+    border-radius: 20px 20px 0 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .section:hover {
+    border-color: rgba(232,25,124,0.4);
+    box-shadow: 0 8px 40px rgba(232,25,124,0.08);
+  }
+  .section:hover::before { opacity: 1; }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+  .icon-box {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+  }
+  .icon-box.pink  { background: rgba(232,25,124,0.15); }
+  .icon-box.orange{ background: rgba(247,132,30,0.15); }
+  .icon-box.purple{ background: rgba(123,31,162,0.15); }
+  .icon-box.blue  { background: rgba(33,150,243,0.15); }
+  .icon-box.green { background: rgba(76,175,80,0.15);  }
+  .icon-box.red   { background: rgba(244,67,54,0.15);  }
+  .icon-box.teal  { background: rgba(0,188,212,0.15);  }
+
+  .section h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  .section-num {
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  .section p { color: var(--muted); font-size: 0.96rem; margin-bottom: 12px; }
+  .section p:last-child { margin-bottom: 0; }
+
+  /* ── DATA LIST ── */
+  .data-list {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  .data-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--muted);
+    font-size: 0.94rem;
+  }
+  .data-list li::before {
+    content: '▸';
+    color: var(--grad1);
+    font-size: 0.8rem;
+    margin-top: 3px;
+    flex-shrink: 0;
+  }
+
+  /* ── PURPOSE GRID ── */
+  .purpose-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+    margin-top: 12px;
+  }
+  .purpose-card {
+    background: var(--card2);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 14px;
+    padding: 18px 16px;
+    text-align: center;
+    transition: border-color 0.25s, transform 0.25s;
+  }
+  .purpose-card:hover {
+    border-color: rgba(232,25,124,0.4);
+    transform: translateY(-3px);
+  }
+  .purpose-card .pc-icon { font-size: 1.6rem; margin-bottom: 8px; }
+  .purpose-card p { font-size: 0.85rem; color: var(--muted); margin: 0; }
+
+  /* ── RIGHTS GRID ── */
+  .rights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-top: 12px;
+  }
+  .right-pill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--card2);
+    border: 1px solid rgba(76,175,80,0.2);
+    border-radius: 12px;
+    padding: 12px 14px;
+    font-size: 0.88rem;
+    color: #a0e0a0;
+  }
+  .right-pill span { font-size: 1.1rem; }
+
+  /* ── THIRD PARTY ── */
+  .service-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--card2);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255,255,255,0.05);
+  }
+  .service-row:last-child { margin-bottom: 0; }
+  .service-icon { font-size: 1.4rem; }
+  .service-name { font-weight: 600; color: #fff; font-size: 0.95rem; }
+  .service-desc { font-size: 0.82rem; color: var(--muted); }
+
+  /* ── WARNING BOX ── */
+  .warn-box {
+    background: rgba(244,67,54,0.08);
+    border: 1px solid rgba(244,67,54,0.3);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-top: 14px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .warn-box .wi { font-size: 1.3rem; flex-shrink: 0; }
+  .warn-box p { color: #f08080; font-size: 0.9rem; margin: 0; }
+
+  /* ── CONTACT ── */
+  .contact-box {
+    background: linear-gradient(135deg, rgba(232,25,124,0.1), rgba(247,132,30,0.08));
+    border: 1px solid rgba(232,25,124,0.25);
+    border-radius: 16px;
+    padding: 28px;
+    text-align: center;
+  }
+  .contact-box p { font-size: 0.95rem; color: var(--muted); margin-bottom: 16px; }
+  .contact-email {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 24px;
+    border-radius: 99px;
+    background: linear-gradient(90deg, var(--grad1), var(--grad2));
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    box-shadow: 0 4px 20px rgba(232,25,124,0.3);
+    transition: box-shadow 0.25s, transform 0.2s;
+  }
+  .contact-email:hover {
+    box-shadow: 0 6px 28px rgba(232,25,124,0.5);
+    transform: translateY(-2px);
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    text-align: center;
+    padding: 32px 24px 40px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  footer strong {
+    background: linear-gradient(90deg, var(--grad1), var(--grad2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  @media (max-width: 600px) {
+    .section { padding: 24px 20px; }
+    .purpose-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
 </head>
 <body>
-  
-  <section data-bs-version="5.1" class="header18 cid-sZvocUKbm2 mbr-fullscreen" id="header18-0">
 
-    
+<!-- ═══════════ HERO ═══════════ -->
+<div class="hero">
+  <div class="logo-wrap">
+    <img src="https://i.imgur.com/placeholder.png"
+         onerror="this.style.display='none'"
+         alt="Location Monitor icon">
+    <span class="brand-name">Location Monitor</span>
+  </div>
+  <h1>Privacy Policy</h1>
+  <p>We believe privacy is a right, not a feature. Here's exactly how we handle your data.</p>
+  <span class="badge">Effective Date: March 2026</span>
+</div>
+<div class="glow-line"></div>
 
-    
+<!-- ═══════════ CONTENT ═══════════ -->
+<div class="container">
 
-    <div class="align-center container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-10">
-                <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-3 display-1"><strong>Location Monitor</strong><br><strong>Privacy Policy</strong><strong><br></strong></h1>
-                
-                <p class="mbr-text mbr-fonts-style mbr-white display-7">Cyber Terrorist Dragon built Location Monitor app as a Free app. This SERVICE is provided by Cyber Terrorist Dragon at no cost and is intended for use as is.
-<br>
-<br>This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.
-<br>
-<br>If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.
-<br>
-<br>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which are accessible on the Location Monitor App unless otherwise defined in this Privacy Policy.
-<br>
-<br>Privacy Policy
-<br>
-<br>Effective Date: 03 March 2026
-<br>
-<br>1. Overview
-<br>
-<br>This application (“Location Monitor”) is designed to help users locate, protect, and recover their own Android devices.
-<br>
-<br>We are committed to protecting your privacy and ensuring transparency about how data is collected and used.
-<br>
-<br>2. Information We Collect
-<br>
-<br>The App may collect:
-<br>
-<br>• Device location data (when enabled by user)
-<br>• Device identifiers
-<br>• SIM/network information (if permitted by device)
-<br>• Recovery photos (when user triggers camera command)
-<br>• Cloud command logs
-<br>• Firebase push notification tokens
-<br>
-<br>Data is collected only after user consent and required permissions are granted.
-<br>
-<br>To facilitate our Service;
-<br>To provide the Service on our behalf;
-<br>To perform Service-related services; or
-<br>To assist us in analyzing how our Service is used.
-<br>I want to inform users of this Service that these third parties have access to their Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.
-<br>
-<br>3. How We Use Information
-<br>
-<br>We use collected information solely to:
-<br>
-<br>• Provide real-time location tracking
-<br>• Execute user-requested remote commands
-<br>• Enable Lost Mode protection features
-<br>• Upload recovery photos to user cloud storage
-<br>• Improve app reliability
-<br>
-<br>We do not sell or share user data for advertising.
-<br>
-<br>4. Data Storage
-<br>
-<br>Data is stored securely using:
-<br>
-<br>• Firebase Firestore
-<br>• Firebase Cloud Messaging
-<br>• Firebase Storage
-<br>
-<br>All communications are encrypted via HTTPS.
-<br>
-<br>5. User Control
-<br>
-<br>Users can:
-<br>
-<br>• Disable location tracking at any time
-<br>• Revoke permissions via device settings
-<br>• Delete stored data
-<br>• Uninstall the application
-<br>
-<br>Security
-<br>
-<br>I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.
-<br>
-<br>6. Third-Party Services
-<br>
-<br>This app uses:
-<br>
-<br>• Firebase by Google
-<br>• Google Maps
-<br>
-<br>These services may collect technical data as described in their respective privacy policies.
-<br>
-<br>Links to Other Sites
-<br>
-<br>This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
-<br>
-<br>7. Children’s Privacy
-<br>
-<br>This app is not intended for children under 13.
-<br>
-<br>These Services do not address anyone under the age of 13. I do not knowingly collect personally identifiable information from children under 13 years of age. In the case I discover that a child under 13 has provided me with personal information, I immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact me so that I will be able to do the necessary actions.
-<br>
-<br>8. Lawful Use
-<br>
-<br>This app must only be used on devices owned by the user or with explicit permission from the device owner.
-<br>
-<br>Unauthorized tracking may violate local laws.
-<br>
-<br>Changes to This Privacy Policy
-<br>
-<br>I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page.
-<br>
-<br>This policy is effective as of 2026-03-03<br>
-<br>
-<br>Contact Us
-<br>
-<br>If you wish your data to be deleted from our servers or If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at CyberTerroristDragon@protonmail.com.
-<br>
-<br></p>
-                
-            </div>
-        </div>
+  <!-- 1. Overview -->
+  <div class="section">
+    <div class="section-header">
+      <div class="icon-box pink">🔍</div>
+      <div>
+        <h2>Overview</h2>
+        <div class="section-num">Section 01</div>
+      </div>
     </div>
-  
-  
+    <p>Location Monitor ("the App") is designed to help users locate, protect, and recover their own Android devices. We are fully committed to protecting your privacy and ensuring complete transparency about how data is collected, used, and stored.</p>
+    <p>This Privacy Policy applies to all users of the Location Monitor application and describes our practices regarding personal data in compliance with applicable privacy laws.</p>
+  </div>
+
+  <!-- 2. Data We Collect -->
+  <div class="section">
+    <div class="section-header">
+      <div class="icon-box orange">📦</div>
+      <div>
+        <h2>Information We Collect</h2>
+        <div class="section-num">Section 02</div>
+      </div>
+    </div>
+    <p>The App may collect the following categories of information after user consent and required permissions are granted:</p>
+    <ul class="data-list">
+      <li><strong>Device location data</strong> — GPS coordinates collected when location tracking is enabled by the user</li>
+      <li><strong>Device identifiers</strong> — Android ID used to uniquely identify and register your device</li>
+      <li><strong>SIM / network information</strong> — Operator data used for SIM change detection, where permitted by the device</li>
+      <li><strong>Recovery photos</strong> — Front camera images captured only when the user triggers the camera command via Lost Mode</li>
+      <li><strong>Cloud command logs</strong> — Records of remote commands (e.g., Play Sound, Lock Device) sent to your device</li>
+      <li><strong>Push notification tokens</strong> — Firebase FCM tokens used to deliver instant remote commands</li>
+      <li><strong>Account information</strong> — Email address used for authentication and account management</li>
+      <li><strong>Battery level &amp; device status</strong> — Device health data displayed on your dashboard</li>
+    </ul>
+  </div>
+
+  <!-- 3. How We Use It -->
+  <div class="section">
+    <div class="section-header">
+      <div class="icon-box purple">⚙️</div>
+      <div>
+        <h2>How We Use Your Information</h2>
+        <div class="section-num">Section 03</div>
+      </div>
+    </div>
+    <p>We use collected information solely to provide and improve the app's core features. We do not sell, rent, or share your data for advertising purposes.</p>
+    <div class="purpose-grid">
+      <div class="purpose-card">
+        <div class="pc-icon">📍</div>
+        <p>Real-time location tracking and map display</p>
+      </div>
+      <div class="purpose-card">
+        <div class="pc-icon">🔒</div>
+        <p>Remote device protection and lock commands</p>
+      </div>
+      <div class="purpose-card">
+        <div class="pc-icon">📸</div>
+        <p>Recovery photo capture in Lost Mode</p>
+      </div>
+      <div class="purpose-card">
+        <div class="pc-icon">🔔</div>
+        <p>Instant push command delivery via FCM</p>
+      </div>
+      <div class="purpose-card">
+        <div class="pc-icon">📊</div>
+        <p>Device health monitoring and status display</p>
+      </div>
+      <div class="purpose-card">
+        <div class="pc-icon">🛠</div>
+        <p>App reliability and performance improvement</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Data Storage -->
+  <div class="section">
+    <div class="section-header">
+      <div class="icon-box blue">🗄️</div>
+      <div>
+        <h2>Data Storage &amp; Security</h2>
+        <div class="section-num">Section 04</div>
+      </div>
+    </div>
+    <p>All data is stored and transmitted securely using industry-standard encryption. We use the following Google Firebase services:</p>
+    <div class="service-row">
+      <span class="service-icon">🔐</span>
+      <div>
+        <div class="service-name">Firebase Firestore</div>
+        <div class="service-desc">Stores device records, location data, commands, and user profiles — secured by authenticated access rules</div>
+      </div>
+    </div>
+    <div class="service-row">
+      <span class="service-icon">📬</span>
+      <div>
+        <div class="service-name">Firebase Cloud Messaging (FCM)</div>
+        <div class="service-desc">Delivers remote commands to your device over an encrypted channel</div>
+      </div>
+    </div>
+    <div class="service-row">
+      <span class="service-icon">🖼</span>
+      <div>
+        <div class="service-name">Firebase Storage</div>
+        <div class="service-desc">Stores recovery photos captured in Lost Mode, accessible only by the account owner</div>
+      </div>
+    </div>
+    <div class="service-row">
+      <span class="service-icon">🔑</span>
+      <div>
+        <div class="service-name">Firebase Authentication</div>
+        <div class="service-desc">Manages user accounts with email verification and secure session handling</div>
+      </div>
+    </div>
+    <p style="margin-top:16px;">All communications between the app and our services are encrypted via HTTPS/TLS.</p>
+  </div>
+
+  <!-- 5. User Control -->
+  <div class="section">
+    <div class="section-header">
+      <div class="icon-box green">🎛️</div>
+      <div>
+        <h2>Your Controls &amp; Rights</h2>
+        <div class="section-num">Section 05</div>
+      </div>
+    </div>
+    <p>You are in full control of your data. You can exercise the following rights at any time:</p>
+    <div class="rights-grid">
+      <div class="right-pill"><span>📴</span> Disable location tracking</div>
+      <div class="right-pill"><span>🚫</span> Revoke app permissions</div>
+      <div class="right-pill"><span>🗑️</span> Delete stored data</div>
+      <div class="right-pill"><span>📤</span> Export your data</div>
+      <div class="right-pill"><span>🔓</span> Uninstall the application</div>
+      <div class="right-pill"><span>✉️</span> Request account deletion</div>
+    </div>
+    <p style="margin-top:16px;">To request data deletion or account removal, please contact us using the details in Section 9.</p>
+  </div>
+
+  <!-- 6. Third-Party Services -->
+  <div class="section">
+    <div class="section-header">
+      <div class="icon-box teal">🌐</div>
+      <div>
+        <h2>Third-Party Services</h2>
+        <div class="section-num">Section 06</div>
+      </div>
+    </div>
+    <p>Location Monitor integrates with the following third-party services. Each service has its own privacy policy governing its data practices:</p>
+    <ul class="data-list">
+      <li><strong>Firebase by Google</strong> — Authentication, database, storage, and push messaging</li>
+      <li><strong>Google Maps SDK</strong> — Map display and location visualization</li>
+      <li><strong>Google Play Services</strong> — Fused location provider for accurate GPS data</li>
+    </ul>
+    <p style="margin-top:12px;">We do not integrate advertising SDKs or sell data to any third-party advertisers.</p>
+  </div>
+
+  <!-- 7. Children's Privacy -->
+  <div class="section">
+    <div class="section-header">
+      <div class="icon-box red">🧒</div>
+      <div>
+        <h2>Children's Privacy</h2>
+        <div class="section-num">Section 07</div>
+      </div>
+    </div>
+    <p>Location Monitor is not intended for use by children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, please contact us immediately so we can take appropriate action to remove that information.</p>
+  </div>
+
+  <!-- 8. Lawful Use -->
+  <div class="section">
+    <div class="section-header">
+      <div class="icon-box red">⚖️</div>
+      <div>
+        <h2>Lawful Use Policy</h2>
+        <div class="section-num">Section 08</div>
+      </div>
+    </div>
+    <p>Location Monitor is a device recovery and protection tool designed exclusively for:</p>
+    <ul class="data-list">
+      <li>Tracking and protecting devices you personally own</li>
+      <li>Helping others locate their own device with their explicit consent and login credentials</li>
+      <li>Corporate or family device management where all parties have given informed consent</li>
+    </ul>
+    <div class="warn-box">
+      <span class="wi">⚠️</span>
+      <p><strong>Important:</strong> Using this app to track, monitor, or surveil another person's device without their knowledge and explicit consent may violate local, national, or international privacy laws including GDPR, CCPA, and the Electronic Communications Privacy Act. Such misuse is strictly prohibited and may result in criminal liability.</p>
+    </div>
+  </div>
+
+  <!-- 9. Contact -->
+  <div class="section">
+    <div class="section-header">
+      <div class="icon-box orange">💬</div>
+      <div>
+        <h2>Contact Us</h2>
+        <div class="section-num">Section 09</div>
+      </div>
+    </div>
+    <div class="contact-box">
+      <p>For privacy questions, data requests, account deletion, or any concerns regarding this policy — we're here to help.</p>
+      <a class="contact-email" href="mailto:privacy@locationmonitor.app">
+        ✉️ &nbsp;privacy@locationmonitor.app
+      </a>
+      <p style="margin-top:20px; font-size:0.85rem;">We aim to respond to all privacy-related requests within 72 hours.</p>
+    </div>
+  </div>
+
+  <!-- 10. Updates -->
+  <div class="section">
+    <div class="section-header">
+      <div class="icon-box purple">🔄</div>
+      <div>
+        <h2>Policy Updates</h2>
+        <div class="section-num">Section 10</div>
+      </div>
+    </div>
+    <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. When we make material changes, we will notify you through the app or via email.</p>
+    <p>Continued use of Location Monitor after any updates to this policy constitutes your acceptance of those changes. We encourage you to review this page periodically.</p>
+    <p style="margin-top: 8px; font-size: 0.88rem; color: rgba(232,25,124,0.8); font-weight: 600;">Last updated: March 2026 &nbsp;·&nbsp; Version 1.0</p>
+  </div>
+
+</div>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <p>© 2026 <strong>Location Monitor</strong>. All rights reserved.</p>
+  <p style="margin-top: 8px; font-size: 0.8rem;">Your privacy is our priority — we protect your data so you can protect your device.</p>
+</footer>
+
 </body>
 </html>
